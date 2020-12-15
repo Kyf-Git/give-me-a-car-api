@@ -1,26 +1,12 @@
 <template>
-  <table id="stock">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Marque</th>
-        <th>Km</th>
-        <th>Disponibilité</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr v-for="row in rows" v-bind:key="row" v-bind:row="row">
-        <td>{{ row.id }}</td>
-        <td>{{ row.marque }}</td>
-        <td>{{ row.km }}</td>
-        <td>{{ row.disponibilité }}</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="body"><FullStockAgence class="tableau" /><Sidebar class="sidebar"/></div>
+
+
 </template>
 
+
 <style>
-#stock {
+/*#stock {
   margin-left: auto;
   margin-right: auto;
 }
@@ -52,23 +38,17 @@ table td:last-child {
 }
 table tbody tr:nth-child(2n) td {
   background: #d4d8f9;
-}
+}*/
 </style>
 
 <script>
 export default {
+  components: { FullStockAgence , Sidebar},
   name: "Dashboard",
-  data() {
-    return {
-      rows: [
-        { id: 1, marque: "Renault", km: 25300, disponibilité: true },
-        { id: 2, marque: "Peugeot", km: 37853, disponibilité: true },
-        { id: 3, marque: "Fiat", km: 62872, disponibilité: true },
-        { id: 4, marque: "BMW", km: 125459, disponibilité: true },
-        { id: 5, marque: "Citroen", km: 43982, disponibilité: true },
-      ],
-    };
-  },
+
 };
+
+import FullStockAgence from '../components/Tables/FullStockAgence.vue';
+import Sidebar from '../components/SideBarPlugin/SideBar'
 </script>
 
