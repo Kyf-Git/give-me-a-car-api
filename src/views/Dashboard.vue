@@ -45,6 +45,7 @@ table tbody tr:nth-child(2n) td {
 export default {
   components: { FullStockAgence , Sidebar},
   name: "Dashboard",
+  
 
 };
 
