@@ -1,4 +1,5 @@
 <template>
+<v-simple-table yellow>
   <table id="stock">
     <thead>
       <tr>
@@ -11,14 +12,16 @@
     <tbody>
       <tr v-for="row in rows" v-bind:key="row" v-bind:row="row">
         <td>{{ row.id }}</td>
-        <td><v-btn>vouvou</v-btn></td>
+       
         <td>{{ row.marque }}</td>
         <td>{{ row.km }}</td>
         <td>{{ row.disponibilité }}</td>
       </tr>
     </tbody>
   </table>
+</v-simple-table>
 </template>
+
 
 <style>
 #stock {
