@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img class="jpp" src="../assets/jpp.jpg">
+    <HelloWorld msg="Give me a car"/>
   </div>
 </template>
 
@@ -16,3 +16,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+.jpp {
+  width:25%;
+}
+
+</style>
